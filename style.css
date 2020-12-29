@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Oswald",Arial, Helvetica, sans-serif;
+}
+
+html,body{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background: #000;
+    display: grid;
+    place-items: center;
+}
+
+div{
+    color:greenyellow;
+    font-size: 30px;
+    width: fit-content;
+}
+
+p{
+    color: white;
+    font-size: 4em;
+    letter-spacing: 5px;
+}
+
+.fall{
+    animation: fall 7s forwards;
+}
+
+@keyframes fall{
+    from{
+        transform:translateY(inherit);
+        opacity: 0.2;
+    }
+    to{
+        transform:translateY(1080px);
+        opacity:0;
+    }
+}
